@@ -1,0 +1,14 @@
+type Video @model @auth(rules: [{allow: public}]) @key(name: "byCourse", fields: ["courseID"]) {
+  id: ID!
+  title: String!
+  description: String
+  order: Int
+  courseID: ID!
+}
+
+type Course @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String!
+  description: String
+  videos: [Video] @connection(keyName: "byCourse", fields: ["id"])
+}
