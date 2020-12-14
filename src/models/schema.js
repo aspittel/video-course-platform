@@ -24,13 +24,6 @@ export const schema = {
                     "isRequired": false,
                     "attributes": []
                 },
-                "order": {
-                    "name": "order",
-                    "isArray": false,
-                    "type": "Int",
-                    "isRequired": false,
-                    "attributes": []
-                },
                 "courseID": {
                     "name": "courseID",
                     "isArray": false,
@@ -140,5 +133,5 @@ export const schema = {
     },
     "enums": {},
     "nonModels": {},
-    "version": "66bb15970584e69d2a525d5964de799c"
+    "version": "d264b8197f9e534a1fcc32654c47b732"
 };

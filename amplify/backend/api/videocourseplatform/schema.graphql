@@ -2,7 +2,6 @@ type Video @model @auth(rules: [{allow: public}]) @key(name: "byCourse", fields:
   id: ID!
   title: String!
   description: String
-  order: Int
   courseID: ID!
 }
 

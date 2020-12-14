@@ -8,7 +8,6 @@ export declare class Video {
   readonly id: string;
   readonly title: string;
   readonly description?: string;
-  readonly order?: number;
   readonly courseID: string;
   constructor(init: ModelInit<Video>);
   static copyOf(source: Video, mutator: (draft: MutableModel<Video>) => MutableModel<Video> | void): Video;

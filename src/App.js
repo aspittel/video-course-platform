@@ -1,5 +1,6 @@
 import './App.css'
 import { DataStore } from '@aws-amplify/datastore'
+import { withAuthenticator } from '@aws-amplify/ui-react'
 import { Course } from './models'
 import { useEffect } from 'react'
 
@@ -29,4 +30,4 @@ function App () {
   )
 }
 
-export default App
+export default withAuthenticator(App)

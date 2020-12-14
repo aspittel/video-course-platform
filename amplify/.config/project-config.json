@@ -1,17 +1,17 @@
 {
-    "projectName": "video-course-platform",
-    "version": "2.0",
-    "frontend": "javascript",
-    "providers": [
-        "awscloudformation"
-    ],
-    "javascript": {
-        "framework": "react",
-        "config": {
-            "SourceDir": "src",
-            "DistributionDir": "build",
-            "BuildCommand": "npm run-script build",
-            "StartCommand": "npm run-script start"
-        }
+  "providers": [
+    "awscloudformation"
+  ],
+  "projectName": "video-course-platform",
+  "version": "3.0",
+  "frontend": "javascript",
+  "javascript": {
+    "framework": "react",
+    "config": {
+      "SourceDir": "src",
+      "DistributionDir": "build",
+      "BuildCommand": "npm run-script build",
+      "StartCommand": "npm run-script start"
     }
+  }
 }
