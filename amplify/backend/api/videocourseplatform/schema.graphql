@@ -11,4 +11,4 @@ type Course @model @auth(rules: [{allow: public}]) {
   description: String
   videos: [Video] @connection(keyName: "byCourse", fields: ["id"])
 }
- 
+  

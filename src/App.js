@@ -2,6 +2,7 @@ import './App.css'
 import { DataStore } from '@aws-amplify/datastore'
 import { Course } from './models'
 import { useEffect, useState } from 'react'
+import { withAuthenticator } from '@aws-amplify/ui-react'
 
 function App () {
   const [courses, setCourses] = useState([])
@@ -48,4 +49,4 @@ function App () {
   )
 }
 
-export default App
+export default withAuthenticator(App)
