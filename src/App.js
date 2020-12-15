@@ -14,7 +14,6 @@ function App () {
   useEffect(() => {
     const pullData = async () => {
       try {
-        console.log('hi')
         const models = await DataStore.query(Course)
         console.log(models)
         setCourses(models)
